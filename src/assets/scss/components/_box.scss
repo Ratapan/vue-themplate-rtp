@@ -1,0 +1,110 @@
+.box-info{
+@include box();
+   &__reberse{
+      flex-direction: row-reverse;
+      @media(max-width:$max-tablet){
+         flex-direction: column;
+      }
+   }
+   @media(max-width:$max-tablet){
+      flex-direction: column;
+      justify-content: center;
+   }
+   &__box-img{
+      overflow: hidden;
+      border-radius: var(--r-big);
+      -webkit-border-radius: var(--r-big);
+      -moz-border-radius: var(--r-big);
+      -ms-border-radius: var(--r-big);
+      -o-border-radius: var(--r-big);
+      @include fl_center();
+      max-width: 100%;
+      min-width: 30%;
+      position: relative;
+      // @media(max-width:$max-tablet){
+      //    overflow: hidden;
+      //    min-width: 100%;
+      //    height: 400px;
+      // }
+}
+   &__img{
+      max-height: 100%;
+      max-width: 100%;
+      //  @media(max-width:$max-tablet){
+      //     max-width: auto;
+      //     max-height: auto;
+      //     position: absolute;
+      //  }
+   }
+   &__text{
+      padding: 0 10px 0 10px;
+   }
+}
+.box-report{
+   @include box();
+   width: 100%;
+   &__reberse{
+      flex-direction: row-reverse;
+      @media(max-width:$max-tablet){
+         flex-direction: column;
+      }
+   }
+   @media(max-width:$max-tablet){
+      flex-direction: column;
+      justify-content: center;
+   }
+   &__box-img{
+      overflow: hidden;
+      border-radius: var(--r-big);
+      -webkit-border-radius: var(--r-big);
+      -moz-border-radius: var(--r-big);
+      -ms-border-radius: var(--r-big);
+      -o-border-radius: var(--r-big);
+      @include fl_center();
+      max-width: 100%;
+      min-width: 40%;
+      position: relative;
+      height: 100%;
+}
+   &__img-select{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      right: 0;
+      bottom: 10px;
+   }
+   &__img-select-dot{
+      height: 10px;
+      width: 10px;
+      border-radius: var(--r-low);
+      -webkit-border-radius: var(--r-low);
+      -moz-border-radius: var(--r-low);
+      -ms-border-radius: var(--r-low);
+      -o-border-radius: var(--r-low);
+      background-color: var(--c-link);
+      border: 2px solid var(--c-back);
+      margin: 0 1px;
+            &.active{
+         background-color: var(--c-black);
+         border: 2px solid var(--c-back_2);
+      }
+   }
+   &__img{
+      max-height: 100%;
+      max-width: 100%;
+      border-radius: var(--r-big);
+      -webkit-border-radius: var(--r-big);
+      -moz-border-radius: var(--r-big);
+      -ms-border-radius: var(--r-big);
+      -o-border-radius: var(--r-big);
+}
+   &__text{
+      max-height: 100%;
+      padding: 0 10px 0 10px;
+   }
+}
+.box-fles-line{
+   display: flex;
+   align-items: center;
+}

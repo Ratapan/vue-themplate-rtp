@@ -1,0 +1,22 @@
+.btns-arry {
+  &__link {
+    color: var(--c-back);
+    background-color: var(--c-link);
+    text-decoration: none;
+    padding: 0 10px;
+    border-radius: var(--r-low);
+    -webkit-border-radius: var(--r-low);
+    -moz-border-radius: var(--r-low);
+    -ms-border-radius: var(--r-low);
+    -o-border-radius: var(--r-low);
+    margin: 0 3px;
+    font-family: 'Nunito E-B';
+    &:first-child 
+{
+      margin: 0 3px 0 0 ;
+    }
+    &:last-child {
+      margin: 0 0 0 3px;
+    }
+  }
+}

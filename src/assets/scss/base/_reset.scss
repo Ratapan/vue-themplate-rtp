@@ -1,0 +1,78 @@
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font-family: 'Nunito M', sans-serif;
+  color: var(--c-black);
+}
+
+video {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+p a {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: var(--c-link);
+}
+
+li {
+  list-style-type: none;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--c-back);
+  transition: background-color .4s;
+  -webkit-transition: background-color .4s;
+  -moz-transition: background-color .4s;
+  -ms-transition: background-color .4s;
+  -o-transition: background-color .4s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: inherit;
+}
+
+::-moz-selection {
+  background-color: var(--c-selec);
+}
+
+::selection {
+  background-color: var(--c-select);
+}
+
+form,
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  display: block;
+}

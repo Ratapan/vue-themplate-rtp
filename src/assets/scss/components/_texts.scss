@@ -1,0 +1,52 @@
+.title-main{
+   font-family: 'Nunito B';
+   @media(max-width:$max-tablet){
+      text-align: center;
+   }
+   @media(max-width:$max-movil){
+      font-size: 28px !important;
+   }
+   @media(min-width:$max-movil){
+   font-size: 32px;
+   }
+   @media(min-width:$min-laptop){
+      font-size: 36px;
+   }
+   @media(min-width:$min-desktop){
+      font-size: 40px;
+   }
+}
+.title-second{
+   font-family: 'Nunito B';
+   @media(max-width:$max-tablet){
+      text-align: center;
+      padding: 15px 0 5px 0;
+   }
+   @media(max-width:$max-movil){
+      font-size: 24px !important;
+   }
+   @media(min-width:$max-movil){
+   font-size: 28px;
+   }
+   @media(min-width:$min-laptop){
+      font-size: 32px;
+   }
+   @media(min-width:$min-desktop){
+      font-size: 36px;
+   }
+}
+.parr__one{
+   font-family: 'Nunito R';
+   @media(max-width:$max-movil){
+   font-size: 16px;
+   }
+   @media(min-width:$max-movil){
+   font-size: 18px;
+   }
+   @media(min-width:$min-laptop){
+      font-size: 22px;
+   }
+   @media(min-width:$min-desktop){
+      font-size: 24px;
+   }
+}

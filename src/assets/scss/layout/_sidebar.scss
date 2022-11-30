@@ -1,0 +1,98 @@
+// Sidebar
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--c-back_2);
+  user-select: none;
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  position: relative;
+  &__title {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title-text {
+    font-family: "Nunito B";
+    font-size: 28px;
+    z-index: 50;
+  }
+  &__title-image {
+    height: 74px;
+    position: absolute;
+    z-index: 49;
+  }
+  &__title-image-back{
+    height: 42px;
+  }
+  &__container-arrow{
+    height: 26px;
+    width:  26px;
+    top: 80px;
+    right: -10px;
+    background-color: var(--c-back_2);
+    position: absolute;
+    @include fl_center();
+    border-radius: var(--r-big);
+    -webkit-border-radius: var(--r-big);
+    -moz-border-radius: var(--r-big);
+    -ms-border-radius: var(--r-big);
+    -o-border-radius: var(--r-big);
+    border: 2px solid var(--c-back);
+    cursor: pointer;
+}
+  &__container-arrow-img{
+    position: relative;
+    right: -1px;
+    height: calc(100% - 6px);
+    width: calc(100% - 6px);
+    transition: transform .4s;
+    -webkit-transition: transform .4s;
+    -moz-transition: transform .4s;
+    -ms-transition: transform .4s;
+    -o-transition: transform .4s;
+}
+  &__container-arrow-img-back{
+    right: 1px;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    width: 100%;
+  }
+  &__list-item {
+    text-decoration: none;
+    width: 80%;
+    margin: 0px 0 10px 0;
+    @include btn_primary();
+    @include colors_transition(0.5s, 0.3s);
+  }
+  &__list-item-active{
+    text-decoration: underline;
+  }
+  &__list-item-back{
+    padding: 4px 0 4px 0px;
+    text-align: center;
+    font-family: "Nunito E-B";
+  }
+  &__theme {
+    margin: auto 0 10px 0;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+}

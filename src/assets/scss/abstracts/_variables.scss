@@ -1,0 +1,17 @@
+:root {
+   --c-black: #424B54;
+   --c-back: #F7F4EA;
+   --c-back_2:#ffe1b4;
+   --c-select: #9589dd;
+   --c-link: #881abb;
+   --r-big: 20px;
+   --r-mid: 15px;
+   --r-low: 10px;
+}
+//@media
+$max-movil: 501px;
+$max-movil-plus: 601px;
+$max-tablet: 768px;
+$min-laptop: 1024px;
+$min-desktop: 1440px;
+$min-fullhd: 1920px;

@@ -1,0 +1,54 @@
+//Tipografías del proyecto
+
+$font_path: "~@/assets/font/";
+
+@font-face {
+   font-family: "Nunito E-L";
+   src: url($font_path + "Nunito-ExtraLight.ttf");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Nunito L";
+   src: url($font_path + "Nunito-Light.ttf");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Nunito R";
+   src: url($font_path + "Nunito-Regular.ttf");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Nunito M";
+   src: url($font_path + "Nunito-Medium.ttf");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Nunito S-B";
+   src: url($font_path + "Nunito-SemiBold.ttf");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Nunito B";
+   src: url($font_path + "Nunito-Bold.ttf");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Nunito E-B";
+   src: url($font_path + "Nunito-ExtraBold.ttf");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Nunito Black";
+   src: url($font_path + "Nunito-Black.ttf");
+   font-weight: normal;
+   font-style: normal;
+}
+
+

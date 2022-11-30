@@ -1,0 +1,29 @@
+{
+   "themes": [
+      {
+         "var": "--c-black",
+         "value_light": "#33383d",
+         "value_darck": "#F7F4EA"
+      },
+      {
+         "var": "--c-back",
+         "value_light": "#F7F4EA",
+         "value_darck": "#33383d"
+      },
+      {
+         "var": "--c-back_2",
+         "value_light": "#F5E8C7",
+         "value_darck": "#2b2a2e"
+      },
+      {
+         "var": "--c-select",
+         "value_light": "#9589dd",
+         "value_darck": "#584ca0"
+      },
+      {
+         "var": "--c-link",
+         "value_light": "#AC7088",
+         "value_darck": "#42b983"
+      }
+   ]
+}

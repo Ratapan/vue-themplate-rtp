@@ -1,0 +1,64 @@
+.grid-main{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 10px;
+   @media(max-width:$max-movil){
+      grid-template-columns: repeat(3, 1fr);
+   }
+   @media(min-width:$max-movil){
+      grid-template-columns: repeat(3, 1fr);
+   }
+   @media(min-width:$max-movil-plus){
+      grid-template-columns: repeat(4, 1fr);
+   }
+   @media(min-width:$max-tablet){
+      grid-template-columns: repeat(5, 1fr);
+   }
+   @media(min-width:$min-laptop){
+      grid-template-columns: repeat(6, 1fr );
+   }
+   @media(min-width:$min-desktop){
+      grid-template-columns: repeat(8, 1fr );
+   }
+   &__grid{
+      margin: 0;
+      user-select: none;
+   }
+   
+   &__box{
+      background-color: var(--c-back_2);
+      @include border-radius(var(--r-mid));
+      @include fl_center();
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      //150
+   }
+   
+   &__box-img{
+      max-width: calc(100% - 15px);
+      max-height: calc(100% - 15px);
+   }
+   &__box-front{
+      @include fl_center();
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      color:  transparent;
+      @include colors_transition(.5s, 0.3s);
+      font-family: 'Nunito Black';
+      @media(max-width:$max-movil){
+         font-size: 18px;
+      }
+      @media(min-width:$max-movil){
+         font-size: 20px;
+      }
+      &:hover{
+         color:  var(--c-back_2);
+         background-color: var(--c-link);
+         font-size: 26px;
+      }
+   }
+}
